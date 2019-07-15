@@ -25,11 +25,16 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-
+    <!--lombok-->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.16.6</version>
+    </dependency>
+    <!-- 引入freeMarker的依赖包. -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-freemarker</artifactId>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -37,7 +42,6 @@
       <version>RELEASE</version>
     </dependency>
   </dependencies>
-
 
 
   <build>
