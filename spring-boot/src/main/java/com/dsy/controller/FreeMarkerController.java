@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class FreeMarkerController {
 
-  @RequestMapping("freemarker")
+  @RequestMapping("/freemarker")
   public String freeMarker(Model model) {
     List<user> list = new ArrayList<>();
     list.add(new user(12,"章三",122));

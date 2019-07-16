@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thymeleaf</title>
+</head>
+<body>
+<span th:text="Hello"></span>
+<hr/>
+<span th:text="${msg}"></span>
+<hr/>
+<input type="text" th:value="${msg}"/>
+<hr/>
+<span>判断字符串</span>
+<hr/>
+判断字符串是否为空，如果为空返回 true，否则返回 false<hr/>
+<span th:text="${#strings.isEmpty(msg)}"></span>
+<hr/>
+判断字符串是否包含指定的子串，如果包含返回 true，否则返回 false<hr/>
+<span th:text="${#strings.contains(msg,'T')}"></span>
+<hr/>
+判断当前字符串是否以子串开头，如果是返回 true，否则返回 false<hr/>
+<span th:text="${#strings.startsWith(msg,'a')}"></span>
+<hr/>
+判断当前字符串是否以子串结尾，如果是返回 true，否则返回 false<hr/>
+<span th:text="${#strings.endsWith(msg,'f')}"/>
+<hr/>
+返回字符串的长度<hr/>
+<span th:text="${#strings.length(msg)}"/>
+<hr/>
+查找子串的位置，并返回该子串的下标，如果没找到则返回-1<hr/>
+<span th:text="${#strings.indexOf(msg,'h')}"/>
+<hr/>
+截取子串，用户与 jdk String 类下 SubString 方法相同,包含开头不包含结束<hr/>
+<span th:text="${#strings.substring(msg,3)}"/>
+<span th:text="${#strings.substring(msg,3,5)}"/>
+<hr/>
+字符串转大小写<hr/>
+<span th:text="${#strings.toUpperCase(msg)}"/>
+<span th:text="${#strings.toLowerCase(msg)}"/>
+</body>
+</html>
